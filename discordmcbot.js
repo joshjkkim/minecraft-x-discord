@@ -80,8 +80,8 @@ client.on('messageCreate', (msg) => {
       });
     }
 
-    if (recentmsg.includes('chat ') == true) {
-      let words = recentmsg.split(" ")
+    if (recentmsg.includes('chat: ') == true) {
+      let words = recentmsg.split(": ")
       bot.chat(words[1])
     }
     if (recentmsg.includes('toggle') == true) {
